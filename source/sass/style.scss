@@ -1,0 +1,15 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "categories.scss";
+@import "catalog.scss";
+@import "product.scss";
+@import "about.scss";
+@import "footer.scss";
+
+body {
+  background: white;
+  color: black;
+}
+

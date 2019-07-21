@@ -1,0 +1,14 @@
+.navigation__list {
+  list-style: none;
+}
+
+.site-list {
+  &__item {
+    @include font-size(17px, 24px, 700);
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+}

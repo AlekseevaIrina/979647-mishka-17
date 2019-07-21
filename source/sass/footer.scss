@@ -1,0 +1,7 @@
+.social__list {
+  list-style: none;
+}
+
+.copyright__text {
+  @include font-size(19px, 18px, 700);
+}
