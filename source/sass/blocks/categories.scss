@@ -14,17 +14,18 @@
 
 .categories__item {
   @include font-size(19px, 24px, 700);
-}
 
-.categories__item:nth-child(2n+1) {
-  background-color: #63d1bb;
-}
+  &:nth-child(2n+1) {
+    background-color: #63d1bb;
+  }
 
-.categories__item:nth-child(2n) {
-  background-color: #56c3b2;
+  &:nth-child(2n) {
+    background-color: #56c3b2;
+  }
 }
 
 .categories__link {
   color: white;
   text-decoration: none;
 }
+

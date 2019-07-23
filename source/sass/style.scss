@@ -1,13 +1,11 @@
-@import "fonts.scss";
-@import "mixins.scss";
-@import "header.scss";
-@import "categories.scss";
-@import "catalog.scss";
-@import "product.scss";
-@import "about.scss";
-@import "footer.scss";
-
-body {
-  background: white;
-  color: black;
-}
+@import "base/normalize.scss";
+@import "blocks/body.scss";
+@import "base/fonts.scss";
+@import "base/vars.scss";
+@import "blocks/navigation.scss";
+@import "blocks/site-list.scss";
+@import "blocks/categories.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/about.scss";
+@import "blocks/footer.scss";
