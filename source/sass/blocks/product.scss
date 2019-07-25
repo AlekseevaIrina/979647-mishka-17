@@ -1,0 +1,22 @@
+.product__title {
+  @include font-size(25px, 30px, 700);
+}
+
+.product__badge {
+  color: #56c3b2;
+  text-transform: uppercase;
+
+  @include font-size(17px, 20px, 700);
+}
+
+.product__description {
+  @include font-size(15px, 24px, 400);
+}
+
+.product__specifications {
+  @include font-size(15px, 20px, 400);
+}
+
+.product__cost {
+  @include font-size(17px, 24px, 700);
+}

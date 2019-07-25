@@ -1,0 +1,11 @@
+.about__title {
+  @include font-size(25px, 30px, 700);
+}
+
+.about__list {
+  list-style: none;
+}
+
+.about__item {
+  @include font-size(17px, 20px, 700);
+}
