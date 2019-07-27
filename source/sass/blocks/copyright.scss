@@ -1,0 +1,7 @@
+.copyright {
+  display: flex;
+}
+
+.copyright__text {
+  @include font-size(19px, 18px, 700);
+}

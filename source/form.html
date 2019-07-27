@@ -8,30 +8,37 @@
 <body>
 
 <header class="header">
-  <a class="header__logo">
-    <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-  </a>
-  <nav class="navigation">
-    <button class="navigation__button" type="button">Открыть меню</button>
-    <ul class="navigation__list site-list">
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Каталог товаров</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Вязание на заказ</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Поиск по сайту</a>
-      </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="#">Корзина: пока пуста</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="header__wrapper">
+    <div class="header-logo">
+      <a class="header-logo__link">
+        <img class="header-logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <button class="header-logo__toggle" type="button">Открыть меню</button>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <footer class="footer">
-  <ul class="social__list">
+  <a class="footer__logo">
+    <img class="footer__logo--image" src="img/logo-footer.svg" width="102" height="35" alt="Мишка">
+  </a>
+  <ul class="footer__social social">
     <li class="social__item">
       <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
     </li>

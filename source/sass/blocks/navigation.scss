@@ -1,3 +1,25 @@
+.navigation {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .navigation__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  /* Временно для сетки */
+  min-height: 316px;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    width: auto;
+    margin: 0;
+  }
+
+  .navigation__list {
+    display: flex;
+    /* Временно для сетки */
+    min-height: 90px;
+  }
 }

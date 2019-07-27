@@ -1,18 +1,24 @@
 .catalog__title {
   @include font-size(27px, 30px, 700);
-  background-color: #f1f1f1;
+  background-color: $bg-lightgrey;
+
+  margin: 0;
+  padding: 0;
 }
 
-.product-list {
-  &__title {
-    @include font-size(17px, 24px, 700);
-  }
+.catalog {
+  width: 320px;
+  margin: 0 auto;
+}
 
-  &__description {
-    @include font-size(13px, 30px, 400);
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
   }
+}
 
-  &__cost {
-    @include font-size(15px, 24px, 700);
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1150px;
   }
 }
