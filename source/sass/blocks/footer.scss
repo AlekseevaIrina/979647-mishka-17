@@ -1,7 +1,18 @@
-.social__list {
-  list-style: none;
+.footer {
+  width: 320px;
+  margin: 0 auto;
 }
 
-.copyright__text {
-  @include font-size(19px, 18px, 700);
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1150px;
+  }
 }
