@@ -1,31 +1,9 @@
-.header__wrapper {
-  display: flex;
-  flex-direction: column;
-}
+.header {
+  position: relative;
+  z-index: 3;
 
-@media (min-width: $tablet-width) {
-  .header {
+  @media (min-width: $tablet-width) {
     width: auto;
     margin: 0;
   }
-
-  .header__wrapper {
-    height: 80px;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 670px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__wrapper {
-    width: 1150px;
-  }
-}
-
-.header-logo {
-  width: 320px;
-  margin: 0 auto;
-  height: 80px;
 }
