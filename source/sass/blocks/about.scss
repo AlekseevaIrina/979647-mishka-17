@@ -1,41 +1,95 @@
 .about {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 57px auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .about__title {
   @include font-size(25px, 30px, 700);
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(43px, 50px, 700);
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size(53px, 57px, 700);
+  }
 }
 
 .about__list {
-  list-style: none;
+  @include list-unstyled();
   margin: 0;
   padding: 0;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about__item {
   @include font-size(17px, 20px, 700);
-}
+  position: relative;
+  padding-top: 82px;
 
-@media (min-width: $tablet-width) {
-  .about {
-    width: 768px;
-  }
-
-  .about__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .about__item {
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 22px, 700);
     flex-basis: 50%;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .about {
-    width: 1150px;
+.about__item--natural {
+  @media (min-width: $tablet-width) {
+    order: 1;
   }
+}
+
+.about__item--scandinavian {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.about__item--likes {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.about__item--handmade {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.about__item--home {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.about__item--packing {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+}
+
+.about__icon {
+  position: absolute;
+  fill: $color-lightblue;
+  top: 25px;
+  left: 10px;
 }
