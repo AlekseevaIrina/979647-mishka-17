@@ -1,0 +1,21 @@
+.form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.form__info {
+  @include font-size(14px, 16px, 400);
+  margin: 0 0 31px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

@@ -1,15 +1,10 @@
 .about {
-  width: 320px;
+  width: 260px;
   margin: 0 auto 57px auto;
 
 
   @media (min-width: $tablet-width) {
     width: 668px;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    width: 1050px;
   }
 }
 
@@ -30,9 +25,6 @@
 
 .about__list {
   @include list-unstyled();
-  margin: 0;
-  padding: 0;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
