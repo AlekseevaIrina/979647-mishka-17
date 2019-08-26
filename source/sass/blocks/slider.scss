@@ -1,0 +1,89 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.slider__item {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.slider__quote {
+  @include list-unstyled();
+}
+
+.slider__text {
+  @include font-size(15px, 30px, 400);
+  @include list-unstyled();
+  margin-bottom: 25px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+}
+
+.slider__author-name {
+  @include font-size(17px, 24px, 700);
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.slider__author-nick {
+  @include font-size(17px, 30px, 400);
+  text-decoration: none;
+  color: $color-black;
+}
+
+.slider__buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 176px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.slider__button {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 1px solid #e8e8e8;
+  height: 52px;
+
+  &:hover .slider__arrow {
+    fill: $color-black-hover;
+  }
+
+  &:active .slider__arrow {
+    fill: $color-black-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+}
+
+.slider__write--button {
+  width: 228px;
+  padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -96px;
+    right: 0;
+    width: 176px;
+  }
+}

@@ -1,0 +1,124 @@
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 59px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1050px;
+    min-height: 455px;
+    margin: 0 auto 109px;
+    align-items: flex-end;
+  }
+}
+
+.process__title {
+  @include font-size(17px, 24px, 700);
+  padding: 20px 0 24px 90px;
+  position: relative;
+  width: 168px;
+  margin: 0 auto;
+  border: 1px solid $color-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 562px;
+    border-bottom: 0;
+    padding: 37px 0 7px 106px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    margin: 0 0 0 auto;
+    padding: 99px 55px 7px 75px;
+  }
+}
+
+.process__icon {
+  position: absolute;
+  fill: $color-lightblue;
+  left: 33px;
+  top: 26px;
+
+  @media (min-width: $tablet-width) {
+    left: 41px;
+    top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 77px;
+    top: 44px;
+  }
+}
+
+.process__wrapper {
+  padding: 25px 33px 30px;
+  width: 192px;
+  margin: 0 auto;
+  border: 1px solid $color-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 584px;
+    border-top: 0;
+    padding: 25px 42px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+    min-height: 245px;
+    margin: 0;
+    padding: 25px 56px 30px 76px;
+  }
+}
+
+.process__video-wrapper {
+  width: 260px;
+  height: 150px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 685px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.process__button-play {
+  position: absolute;
+  top: calc(50% - 38px);
+  left: calc(50% - 50px);
+  transition: transform ease 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    fill-opacity: 0.3;
+  }
+}
+
+.process__text {
+  @include font-size(13px, 24px, 400);
+  margin: 0 0 26px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+}
+
+.process__order {
+  width: 100%;
+  box-sizing: border-box;
+}

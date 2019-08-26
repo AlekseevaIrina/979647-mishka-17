@@ -1,0 +1,277 @@
+.field {
+  margin: 0;
+  padding: 34px 0 0;
+  border: 0;
+  border-top: 1px solid $color-lightblue;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 167px;
+    border: 0;
+  }
+}
+
+.field__name {
+  @include font-size(17px, 16px, 700);
+  color: $color-lightblue;
+  text-transform: uppercase;
+  text-align: left;
+  padding-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 2px;
+  }
+}
+
+.field__list {
+  @include list-unstyled();
+  text-align: left;
+}
+
+.field__item {
+  @include font-size(17px, 18px, 700);
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    margin-bottom: 58px;
+  }
+}
+
+.field--type {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.field--color label,
+.field--type label {
+  padding-left: 64px;
+  position: relative;
+}
+
+.field__radio:checked + label::before {
+  background-color: $color-lightblue;
+  box-shadow: inset 0 0 0 10px $color-white;
+}
+
+.field__radio + label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  top: -9px;
+  left: 0;
+}
+
+.field__radio + label:hover::before {
+  border-color: $color-lightblue;
+}
+
+.field__radio + label:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.field--color {
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-lightgrey;
+    padding-top: 66px;
+    padding-bottom: 10px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      background-color: $bg-lightgrey;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.field__list--color {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.field__item--color {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 238px;
+  }
+}
+
+.field__checkbox:checked + label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.field__checkbox + label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  top: -11px;
+  left: 0;
+}
+
+.field__checkbox + label:hover::before {
+  border-color: $color-lightblue;
+}
+
+.field__checkbox + label:active::before,
+.modal__item:hover label {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.field--fio {
+  padding-top: 29px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+    margin-bottom: 29px;
+  }
+}
+
+.field__name--fio {
+  @media (min-width: $tablet-width) {
+    top: 68px;
+  }
+}
+
+.field__item--fio {
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+}
+
+.field--fio label {
+  @media (min-width: $tablet-width) {
+    padding-right: 26px;
+  }
+}
+
+.field__text {
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid $color-black;
+  padding: 14px 0;
+  width: 100%;
+  font-weight: 400;
+
+  &:hover {
+    border-bottom-color: $color-lightblue;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+  }
+}
+
+.field__text[type="email"],
+.field__text[type="tel"] {
+  @media (min-width: $tablet-width) {
+    background-color: $bg-lightgrey;
+  }
+}
+
+.field--email,
+.field--tel {
+  padding-top: 3px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-lightgrey;
+    padding-top: 47px;
+    margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      background-color: $bg-lightgrey;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.field__item--tel {
+  font-size: 19px;
+}
+
+.field__icon {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  fill-opacity: 0.2;
+}
+
+.field__text:focus + .field__icon,
+.field__text:hover + .field__icon {
+  fill: $color-lightblue;
+  fill-opacity: 1;
+}
+
+.field--email {
+  padding-top: 6px;
+}
+
+.field__icon--email {
+  right: 4px;
+  top: 12px;
+}
+
+.field--extra {
+  padding-top: 25px;
+  margin-bottom: 18px;
+}
+
+.field__item--extra {
+  margin-bottom: 0;
+}
+
+.field__textarea {
+  resize: none;
+  outline: 0;
+  width: 100%;
+  height: 140px;
+  border: 2px solid $color-black;
+  padding: 14px;
+
+  &:focus,
+  &:hover {
+    border-color: $color-lightblue;
+  }
+}

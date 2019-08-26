@@ -7,10 +7,6 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -24,6 +20,14 @@
     background-position: bottom;
     background-size: contain;
     bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      height: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 20px;
+    }
   }
 }
 
@@ -59,12 +63,10 @@
 }
 
 .product__badge {
+  @include list-unstyled();
+  @include font-size(17px, 20px, 700);
   color: $color-darkblue;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-
-  @include font-size(17px, 20px, 700);
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -150,25 +152,6 @@
 }
 
 .product__button {
-  display: block;
   width: 260px;
   padding: 14px;
-
-  @include font-size(17px, 20px, 700);
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: #444444;
-  border: 2px solid #444444;
-  background-color: $color-white;
-
-  &:hover {
-    background-color: #444444;
-    color: $color-white;
-  }
-
-  &:active {
-    background-color: #444444;
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
