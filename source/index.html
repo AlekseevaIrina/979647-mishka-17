@@ -111,7 +111,7 @@
       </picture>
       <div class="product__cost-wrapper">
         <p class="product__cost">Цена: 990 руб.</p>
-        <button class="product__button button" type="button">Заказать</button>
+        <button class="product__button button modal-open" type="button">Заказать</button>
       </div>
     </div>
   </section>
@@ -249,6 +249,32 @@
     </a>
   </div>
 </footer>
+
+<section class="modal modal--closed">
+  <div class="modal__wrapper">
+    <div class="modal__content">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" type="radio" name="size" id="size-small" value="small" required="">
+            <label for="size-small">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" type="radio" name="size" id="size-medium" value="medium">
+            <label for="size-medium">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" type="radio" name="size" id="size-large" value="large">
+            <label for="size-large">L</label>
+          </li>
+        </ul>
+        <input class="button modal__button" type="submit" value="Добавить">
+      </form>
+    </div>
+  </div>
+</section>
 
 <script src="js/script.js"></script>
 
