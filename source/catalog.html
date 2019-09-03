@@ -78,7 +78,7 @@
           </div>
           <div class="product-list__price">
             <span class="product-list__cost">1200 руб.</span>
-            <a href="#" class="product-list__cart">
+            <a href="#" class="product-list__cart modal-open">
               <svg class="product-list__icon" width="20.294" height="18.849">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -105,7 +105,7 @@
           </div>
           <div class="product-list__price">
             <span class="product-list__cost">650 руб.</span>
-            <a href="#" class="product-list__cart">
+            <a href="#" class="product-list__cart modal-open">
               <svg class="product-list__icon" width="20.294" height="18.849">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -132,7 +132,7 @@
           </div>
           <div class="product-list__price">
             <span class="product-list__cost">1500 руб.</span>
-            <a href="#" class="product-list__cart">
+            <a href="#" class="product-list__cart modal-open">
               <svg class="product-list__icon" width="20.294" height="18.849">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -209,6 +209,32 @@
     </a>
   </div>
 </footer>
+
+<section class="modal modal--closed">
+  <div class="modal__wrapper">
+    <div class="modal__content">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" type="radio" name="size" id="size-small" value="small" required="">
+            <label for="size-small">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" type="radio" name="size" id="size-medium" value="medium">
+            <label for="size-medium">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" type="radio" name="size" id="size-large" value="large">
+            <label for="size-large">L</label>
+          </li>
+        </ul>
+        <input class="button modal__button" type="submit" value="Добавить">
+      </form>
+    </div>
+  </div>
+</section>
 
 <script src="js/script.js"></script>
 
