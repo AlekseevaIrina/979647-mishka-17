@@ -17,6 +17,7 @@
     background-position: center -2px;
     margin-top: -65px;
     border-top: 1px solid $color-grey;
+    margin-bottom: 36px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -27,7 +28,7 @@
       position: absolute;
       content: "";
       min-width: 100%;
-      height: 13px;
+      height: 21px;
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-position: bottom;
       background-size: contain;
@@ -37,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/hero-desktop@1x.jpg");
-    margin-bottom: 122px;
+    margin-bottom: 118px;
     margin-top: -63px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -51,13 +52,18 @@
   @include font-size(27px, 30px, 700);
 
   margin: 0;
-  padding: 70px 35px 117px;
+  padding: 70px 35px 94px;
   text-align: center;
 
 
   @media (min-width: $tablet-width) {
     @include font-size(43px, 50px, 700);
     padding: 160px 132px 367px 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size(53px, 50px, 700);
+    padding-left: 151px;
   }
 }
 
@@ -81,6 +87,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    height: 128px;
   }
 }
 
@@ -98,7 +105,7 @@
   text-decoration: none;
   position: absolute;
   display: flex;
-  padding: 25px 30px 30px;
+  padding: 25px 13px 30px;
   width: 100%;
   box-sizing: border-box;
   height: 103px;
@@ -113,15 +120,53 @@
   &:hover .categories__icon {
     fill: $fill-icon-hover;
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active .categories__icon {
+    fill: rgba(20, 144, 128, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 128px;
+    padding: 15px 35px 25px;
+
+    &:hover {
+      height: 133px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 42px 25px;
+  }
 }
 
 .categories__icon {
   position: absolute;
   top: 19px;
-  right: 5%;
+  right: 8%;
   fill: $fill-icon;
+
+  @media (min-width: $tablet-width) {
+    top: 29px;
+    right: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6%;
+  }
 }
 
 .categories__icon--toy {
-  right: 3%;
+  right: 5%;
+
+  @media (min-width: $tablet-width) {
+    right: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4%;
+  }
 }

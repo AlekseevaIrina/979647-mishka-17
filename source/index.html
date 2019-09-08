@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 <body>
 
@@ -99,16 +101,19 @@
           </tr>
         </table>
       </div>
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-        <img class="product__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
-      </picture>
+      <a class="product__link" href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)"
+                  srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+        </picture>
+      </a>
       <div class="product__cost-wrapper">
         <p class="product__cost">Цена: 990 руб.</p>
         <button class="product__button button modal-open" type="button">Заказать</button>
@@ -181,7 +186,7 @@
             </svg>
           </button>
         </div>
-        <a class="slider__write--button button" href="#">Написать</a>
+        <a class="slider__write slider__write--button button" href="#">Написать</a>
       </div>
     </div>
   </section>
@@ -214,7 +219,7 @@
 
 <footer class="footer">
   <a class="footer__logo">
-    <img class="footer__logo--image" src="img/logo-footer.svg" width="102" height="35" alt="Мишка">
+    <img class="footer__image" src="img/logo-footer.svg" width="102" height="35" alt="Мишка">
   </a>
   <div class="footer__social social">
     <ul class="social__list">

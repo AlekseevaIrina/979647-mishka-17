@@ -1,9 +1,9 @@
 var navMain = document.querySelector('.navigation');
 var navToggle = document.querySelector('.navigation__toggle');
 
-var modalOpen = document.querySelectorAll(".modal-open");
-var modal = document.querySelector(".modal");
-var modalWrapper = document.querySelector(".modal__wrapper");
+var modalOpen = document.querySelectorAll('.modal-open');
+var modal = document.querySelector('.modal');
+var modalWrapper = document.querySelector('.modal__wrapper');
 
 navMain.classList.remove('navigation--nojs');
 

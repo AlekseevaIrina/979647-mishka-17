@@ -4,7 +4,7 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    width: 700px;
   }
 }
 
@@ -40,6 +40,7 @@
   @media (min-width: $tablet-width) {
     @include font-size(20px, 22px, 700);
     flex-basis: 50%;
+    margin-bottom: 26px;
   }
 }
 
@@ -83,5 +84,5 @@
   position: absolute;
   fill: $color-lightblue;
   top: 25px;
-  left: 10px;
+  left: 5px;
 }

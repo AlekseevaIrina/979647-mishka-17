@@ -14,8 +14,8 @@
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: center;
-      top: -15px;
-      right: 36px;
+      top: -25px;
+      right: 54px;
 
       @media (min-width: $desktop-width) {
         left: 71px;
@@ -28,7 +28,7 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     min-height: 525px;
-    margin: 0 auto 100px;
+    margin: 0 auto 37px;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -40,12 +40,12 @@
   @include font-size(18px, 30px, 700);
 
   width: 260px;
-  margin: 0 auto 26px;
+  margin: 0 auto 19px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
     font-size: 43px;
-    margin-bottom: 49px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 79px;
+    margin-bottom: 46px;
   }
 }
 
@@ -119,9 +119,19 @@
   }
 }
 
+.contacts__email-row {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+}
+
 .contacts__address-row {
   @media (min-width: $tablet-width) {
     margin-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -140,10 +150,14 @@
 .contacts__map-wrapper {
   width: calc(100vw - 17px);
   height: 457px;
-  margin-bottom: 39px;
+  margin-bottom: 33px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -167,5 +181,9 @@
   @media (min-width: $tablet-width) {
     width: 198px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }

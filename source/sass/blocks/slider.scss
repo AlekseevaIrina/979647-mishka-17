@@ -26,6 +26,10 @@
     font-size: 17px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .slider__author-name {
@@ -51,9 +55,14 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 176px;
-    bottom: 0;
-    right: 0;
+    bottom: -5px;
+    right: 98px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -6px;
+    right: -84px;
   }
 }
 
@@ -83,7 +92,11 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -96px;
-    right: 0;
-    width: 176px;
+    right: 97px;
+    width: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -84px;
   }
 }

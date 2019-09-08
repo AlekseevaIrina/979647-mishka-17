@@ -80,6 +80,10 @@
   }
 }
 
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
 @media (max-width: $mobile-width-only) {
   .navigation {
     position: absolute;
@@ -92,6 +96,20 @@
 
   .navigation--closed .navigation__item--logo {
     display: block;
+  }
+
+  .navigation--nojs {
+    position: relative;
+  }
+
+  .navigation--nojs .navigation__item {
+    display: block;
+  }
+
+  .navigation--nojs .navigation__item--new,
+  .navigation--nojs .navigation__item--sale,
+  .navigation--nojs .navigation__item--delivery {
+    display: none;
   }
 }
 
@@ -151,14 +169,14 @@
   @media (min-width: $tablet-width) {
     padding: 20px 0;
     order: -1;
-    flex-basis: 47%;
+    flex-basis: 48%;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding: 8px 0;
     order: 3;
-    flex-basis: 19%;
+    flex-basis: 21%;
     text-align: center;
   }
 }
@@ -198,7 +216,7 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     background-color: transparent;
-    padding: 20px 30px 20px 0;
+    padding: 20px 37px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -207,7 +225,7 @@
     font-size: 17px;
     padding: 0;
     order: 1;
-    flex-basis: 18%;
+    flex-basis: 16%;
 
     min-height: 88px;
     border-right: 1px solid $color-grey;
@@ -225,8 +243,8 @@
     align-items: center;
     font-size: 17px;
     order: 2;
-    padding: 0 0 0 30px;
-    flex-basis: 23%;
+    padding: 0 0 0 33px;
+    flex-basis: 21%;
   }
 }
 
@@ -249,12 +267,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-basis: 40%;
+    flex-basis: 39%;
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 30%;
+    flex-basis: 23%;
     order: 5;
   }
 }
@@ -277,7 +295,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     order: 7;
-    padding: 20px 0 20px 90px;
+    padding: 20px 0 20px 63px;
 
     @include font-size(15px, 24px, 700);
   }
@@ -299,6 +317,7 @@
 
   @media (min-width: $desktop-width) {
     order: 8;
+    padding-right: 100px;
   }
 }
 

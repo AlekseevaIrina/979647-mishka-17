@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 59px;
+  margin-bottom: 62px;
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -61,14 +61,14 @@
   @media (min-width: $tablet-width) {
     width: 584px;
     border-top: 0;
-    padding: 25px 42px 45px;
+    padding: 29px 42px 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 233px;
-    min-height: 245px;
+    min-height: 239px;
     margin: 0;
-    padding: 25px 56px 30px 76px;
+    padding: 31px 56px 30px 76px;
   }
 }
 
@@ -114,7 +114,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size(15px, 30px, 400);
   }
 }
 

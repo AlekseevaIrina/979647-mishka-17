@@ -27,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
-    margin-bottom: 64px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,14 +42,14 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 78px 50px 50px;
+    padding: 90px 50px 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    width: 868px;
-    padding: 73px 79px 96px 270px;
+    width: 796px;
+    padding: 96px 79px 96px 171px;
   }
 }
 
@@ -60,10 +60,11 @@
 
   @media (min-width: $tablet-width) {
     @include font-size(43px, 50x, 700);
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
     @include font-size(53px, 57x, 700);
-    margin-bottom: 48px;
+    margin-bottom: 61px;
   }
 }
