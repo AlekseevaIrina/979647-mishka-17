@@ -144,12 +144,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 50%;
     width: 295px;
-  }
-
-  @media (min-width: $desktop-width) {
-    bottom: -192px;
   }
 }
 

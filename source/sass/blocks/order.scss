@@ -18,7 +18,7 @@
   background-color: $bg-lightgrey;
 
   margin: 0 0 22px 0;
-  padding: 75px 40px;
+  padding: 75px 22px;
 
   @media (min-width: $tablet-width) {
     @include font-size(43px, 50px, 700);

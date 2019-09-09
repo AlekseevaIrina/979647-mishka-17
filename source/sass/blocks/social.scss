@@ -4,11 +4,13 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
+    width: 143px;
+    padding: 25px 68px 25px 144px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 29px 55px 25px 147px;
+    padding: 29px 55px 25px 132px;
   }
 }
 
